@@ -15,6 +15,7 @@
     ],
     "main": "dist/index.js",
     "scripts": {
+        "prepare": "yarn run build",
         "build": "NODE_ENV=production yarn rollup -c ./rollup.config.js",
         "build:example": "NODE_ENV=production yarn rollup -c ./rollup.config.js",
         "start": "yarn rollup --watch -c ./rollup.config.js",
